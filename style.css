@@ -622,6 +622,7 @@ input{
     }
     .text{
 	    height: auto;
+	    position:static;
 	}
     .text-section h1{
        font-size: 25px;
