@@ -618,7 +618,9 @@ input{
         height: 5px;
         height: auto;
     }
-    
+    .text{
+	    height: auto;
+	}
     .text-section h1{
        font-size: 25px;
        padding: 5px;
