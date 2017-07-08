@@ -1,0 +1,923 @@
+/*-------------STYLE RESET--------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----STYLES----*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,400');
+
+#wrapper{
+    
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*-----HEADER----*/
+.header{
+    background: url(img/bakground.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+	margin-bottom:100px;
+    
+}
+
+.logo{
+    padding: 20px;
+}
+
+.masthead{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    color: #ffffff;
+    width: 30%;
+    margin: 20px;
+    
+}
+
+ .masthead h1{
+    font-family: Open Sans,sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    
+}
+
+.masthead p{
+    font-family: Roboto,sans-serif;
+    font-size: 13px;
+    padding: 35px 15px 0px 0px;
+}
+
+/*-----END OF HEADER----*/
+
+/*-----IPHONE SECTION----*/
+.text{
+    position: relative;
+    
+}
+.text-section{
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 100px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    
+    
+}
+
+.text img{
+    position: absolute;
+    right: 100px;
+    bottom: 200px;
+    height: 200%;
+    
+}
+
+.text-section h1{
+    font-family: Open Sans,sans-serif;
+    font-style: 300;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.text-section p{
+    font-family: Roboto,sans-serif;
+    font-size: 13px;
+    line-height: 1.5em;
+    padding: 20px 15px 0px 0px;
+    flex: 1 1 25%;
+    width: 50%;
+}
+
+.text-section p:nth-child(5){
+    position: absolute;
+    top:100px;
+    right: 10px;
+    width: 40%;
+    
+}
+
+.text-section p:nth-child(6){
+    position: absolute;
+    top:170px;
+    right: 10px;
+    width: 40%;
+}
+
+/*-----END OF IPHONE SECTION----*/
+
+/*-----BOXES SECTION----*/
+
+.boxes{
+    margin-top: 100px;
+    padding-left: 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #fff;
+    
+}
+
+.boxes p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 2em;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+.boxes p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.box-1{
+    width: 400px;
+    height: 278px;
+    padding: 15px;
+    background-color: #f5989d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.box-2{
+    width: 400px;
+    height: 278px;
+    padding: 15px;
+    background-color: #615f7d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.box-3{
+    width: 400px;
+    height: 278px;
+    padding: 15px;
+    background: url(img/Layer%206.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.box-4{
+    width: 800px;
+    height: 278px;
+    padding: 15px;
+    background: url(img/Layer%205.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.box-5{
+    width: 400px;
+    height: 278px;
+    padding: 15px;
+    background-color: #82ca9c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+
+/*-----END OF BOXES SECTION----*/
+
+/*-----COLUMNS SECTION----*/
+.columns{
+    padding-left: 100px;
+    margin-top: 100px;
+}
+
+.columns h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #222626;    
+}
+
+.cols{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+.col h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 30px 10px 10px 10px;
+    color: #67676d;
+}
+
+.col p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 10px;
+    color: #b1b1b1;
+}
+
+/*-----END OF COLUMNS SECTION----*/
+
+/*-----FULL SECTION----*/
+
+.full{
+    margin-top: 150px;
+    position: relative;
+    background: url(img/Layer%204.png) no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+    overflow: visible;
+    width: 100%;
+    height: 624px;
+}
+
+.full h1{
+    position: absolute;
+    bottom: 40%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    padding: 20px;
+    width: 50%;
+    padding-left: 100px;
+}
+
+.full p{
+    position: absolute;
+    bottom: 15%;
+    width: 30%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.5em;
+    padding: 20px;
+    padding-left: 100px;
+}
+
+.full  a {
+    position: absolute;
+    bottom: 8%;
+    padding-left: 100px;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 10px;
+}
+
+/*-----END OF FULL SECTION----*/
+
+/*-----COLUMNS 2 SECTION----*/
+.columns2{
+    background-color: #82ca9c;
+    width: 100%;
+    height: 536px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.columns2 h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    color: #fff;    
+}
+
+.col2 h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 30px 10px 10px 10px;
+    color: #fff;
+}
+
+.col2 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 10px;
+    color: #fff;
+    width: 70%;
+}
+/*-----END OF COLUMNS 2 SECTION----*/
+
+/*-----BUYING SECTION----*/
+
+.buying{
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gis{
+    padding: 20px;
+    margin-top: 50px;
+  
+}
+
+.gis h1{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 30px;
+    padding: 10px;
+
+}
+
+.gis p{
+    font-family: 'Open Sans',sans-serif;
+    color: #c0cad3;
+    font-size: 14px;
+    padding: 10px;
+    line-height: 1.5em;
+    
+
+}
+
+.legacy{
+    width: 77px;
+    height: 24px;
+    background-color: #e1e1e1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+}
+
+.buying-btn{
+    width: 151px;
+    height: 47px;
+    background: #82ca9c;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.tp{
+    padding: 20px;
+    margin-top: 50px;
+    -webkit-box-shadow: -15px -11px 6px -5px rgba(0,0,0,0.09);
+    -moz-box-shadow: -15px -11px 6px -5px rgba(0,0,0,0.09);
+    box-shadow: -15px -11px 6px -5px rgba(0,0,0,0.09);
+}
+
+.tp h1{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 30px;
+    padding: 10px;
+
+}
+
+.tp p{
+    font-family: 'Open Sans',sans-serif;
+    color: #c0cad3;
+    font-size: 14px;
+    padding: 10px;
+    line-height: 1.5em;
+    
+
+}
+
+.mp{
+    width: 110px;
+    height: 24px;
+    background-color: #bd8cbf;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    font-size: 11px;
+}
+
+/*-----END OF BUYING SECTION----*/
+
+/*-----FOOTER----*/
+footer{
+    margin-top: 100px;
+    background-color: #192431;
+    padding: 20px;
+    color: #fff;
+}
+
+.first{
+    display: flex;
+    padding: 20px;
+}
+.git{
+    padding: 10px;
+    width: 50%;
+}
+.git h4{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+}
+
+.git p{
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+.sit{
+    padding: 10px;
+    width: 50%;
+    position: relative;
+}
+.sit h4{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+}
+
+.sit p{
+    width: 50%;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    color: #4b5b6f;
+    padding: 10px;
+    line-height: 1.5em
+    
+}
+
+input{
+    width: 29.375em;
+    height: 3.625em;
+    padding: 10px;
+}
+
+[type='check']{
+    position: absolute;
+    background-color: #82ca9c;
+    border: none;
+    width: 5.875em;
+    height: 3.625em;
+    
+}
+.fa{
+    color: #fff;
+}
+
+.second{
+    display: flex;
+    padding: 20px;
+}
+.col-1{
+    padding: 10px;
+}
+
+.col-1 h4{
+    padding: 10px;
+} 
+
+.col-1 p{
+    padding: 5px;
+} 
+
+/*-----END OF FOOTER----*/
+/*-----MEDIA QUERIES----*/
+
+@media only screen and (max-width: 767px) {
+    #wrapper{
+        margin: 0px;
+    }
+    .header{
+        max-width: 100%;
+	    margin-bottom: 50px;
+    }
+     .masthead{
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    top: 0px;
+    left: 0px;
+    color: #ffffff;
+    width: 100%;
+    margin: 0px;
+}
+    .masthead h1{
+    font-family: Open Sans,sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    
+
+}
+    
+    .masthead p{
+   position: absolute;
+    top: 200px;
+    left: 3px;
+    width: 100%;
+    padding: 50px 5px 0px 0px;
+   margin-top: 20px;
+    font-family: Roboto,sans-serif;
+    font-size: 15px;
+    text-align: center;
+   
+}
+   
+    .text-section, .boxes, .columns, .full, .columns2, .buying{
+        padding-left: 5px;
+    }
+    .text-section{
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        position: static;
+        text-align: center;
+        height: 5px;
+        height: auto;
+    }
+    .text{
+	    height: auto;
+	    position:static;
+	}
+    .text-section h1{
+       font-size: 25px;
+       padding: 5px;
+    }
+    
+    .text-section p{
+       width: 100%;
+    }
+    .text img{
+        display: none;
+    }
+    
+    .text-section p:nth-child(5){
+    position: static;
+    width: 100%;  
+}
+
+    .text-section p:nth-child(6){
+    position: static;
+    width: 100%;
+}
+    
+    .boxes{
+        max-width: 100%;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .box-1, .box-2, .box-3, .box-4, .box-5{
+        width: 100%;
+    }
+    
+    .box-3{
+        background-size: cover;
+    }
+
+    
+    .cols{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 90%;
+    }
+    
+    .full{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        align-items: center;
+}
+
+.full h1{
+    position: static;
+    bottom: 40%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.full p{
+    position: static;
+    
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.5em;
+    padding: 10px;
+    
+}
+
+.full  a {
+    position: absolute;
+    bottom: 8%;
+    padding-left: 100px;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 10px;
+}
+
+   
+
+    .columns2{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    .columns2 h3{
+        text-align: center;
+        margin: 10px;
+    }
+    .col2 h2{
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    
+    .col2 p{
+        margin-top: 5px;
+        font-size: 12px;
+        width: 100%;
+    }
+    
+    .buying{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    footer{
+    max-width: 100%;
+    padding: 0px;
+   
+}
+    .first{
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0px;
+    }
+    .git {
+        width: 100%;
+    }
+    .sit {
+        width: 100%;
+    }
+    .responsive{
+        display: flex;
+    }
+    .sit p{
+        width: 100%;
+        padding: 0px;
+    }
+
+    [type='check']{
+    position: static;
+    background-color: #82ca9c;
+    border: none;
+    padding: 0px;
+    
+}
+    input{
+    
+    width: 19.375em;
+    height: 3.625em;
+    padding: 0px;
+    }
+.second{
+    padding: 0px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width:1024px){
+    
+   .header{
+        max-width: 100%;
+    }
+     .masthead{
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    top: 0px;
+    left: 0px;
+    color: #ffffff;
+    width: 100%;
+    margin: 0px;
+}
+    .masthead h1{
+    font-family: Open Sans,sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    
+
+}
+    
+    .masthead p{
+   position: absolute;
+    top: 200px;
+    left: 3px;
+    width: 100%;
+    padding: 5px 5px 0px 0px;
+    font-family: Roboto,sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+    
+    .text-section p:nth-child(5){
+    position: static;
+    width: 100%;
+    
+}
+    .text-section h1{
+    text-align: center;
+}
+
+.text-section p{
+    width: 100%;
+}
+
+    .text-section p:nth-child(6){
+    position: static;
+    width: 100%;
+}
+
+    .text img{
+    display: none;
+    }
+    
+     .full{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.full h1{
+    position: static;
+    bottom: 40%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.full p{
+    position: static;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.5em;
+    padding: 20px;
+    
+}
+
+.full  a {
+    position: static;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 10px;
+}
+    
+    footer{
+        max-width: 100%;
+    }
+    .first{
+        flex-direction: column;
+        max-width: 100%;
+        
+    }
+    .git {
+        width: 100%;
+    }
+    .sit {
+        width: 100%;
+    }
+    .responsive{
+        display: flex;
+    }
+    .sit p{
+        width: 100%;
+    }
+
+    [type='check']{
+    position: static;
+    background-color: #82ca9c;
+    border: none;
+    
+    
+}
+    input{
+    
+    width: 19.375em;
+    height: 3.625em;
+    padding: 10px;
+    }
+}
+@media only screen and (min-width: 1024px){
+       .masthead p{
+  margin-bottom: 20px;
+}
+}
+    
+
+/*-----END OF MEDIA QUERIES----*/
